@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"> CimeY</div>
+    <div class="menu" id="menu">
+      <a href="index.html">Beranda</a>
+      <a href="#">Data Produk</a>
+      <a href="profile.html">Profile</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <div class="search">
+        <input type="text" placeholder="Cari bahan disini">
+      </div>
+    </div>
+    <!-- Tombol Hamburger -->
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="logo-big">🧁</div>
+    <h2>CimeY Cake Shop</h2>
+    <p>Menyediakan Segala kebutuhan membuat kue anda!</p>
+  </section>
+
+  <!-- Banner -->
+  <div class="ad">
+    <strong>Promo Bulan Ini:</strong> Diskon 15% untuk tepung & cokelat premium!
+  </div>
+
+  <!-- Kategori -->
+  <div class="categories">
+    <div class="chip">Tepung</div>
+    <div class="chip">Gula</div>
+    <div class="chip">Margarin</div>
+    <div class="chip">Cokelat</div>
+    <div class="chip">Keju</div>
+    <div class="chip">Susu</div>
+  </div>
+
+  <!-- Produk -->
+  <section class="products">
+    <div class="card">
+      <img src="OIP (1).webp" alt="Tepung">
+      <h4>Tepung Terigu Premium</h4>
+      <p>1 kg </p>
+      <div class="price">Rp18.000</div>
+      <button class="buy">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="OIP (2).webp" alt="Gula">
+      <h4>Gula Halus</h4>
+      <p>500 gr </p>
+      <div class="price">Rp12.000</div>
+      <button class="buy">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="OIP (4).webp" alt="Mentega">
+      <h4>Margarin</h4>
+      <p>250 gr </p>
+      <div class="price">Rp22.000</div>
+      <button class="buy">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="coklat.webp" alt="Cokelat">
+      <h4>Dark Chocolate </h4>
+      <p>200 gr </p>
+      <div class="price">Rp28.000</div>
+      <button class="buy">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="OIP.jpeg" alt="Keju">
+      <h4>Keju </h4>
+      <p>200 gr </p>
+      <div class="price">Rp26.000</div>
+      <button class="buy">Beli</button>
+    </div>
+
+    <div class="card">
+      <img src="susu.webp" alt="Topping">
+      <h4>Susu UHT </h4>
+      <p>800 gr </p>
+      <div class="price">Rp28.000</div>
+      <button class="buy">Beli</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>CimeY Bake Shop</strong></p>
+    <p><strong >Jl. Karya Wisata Ujung</strong></p>
+    <p>Telp: 0823-6227-1485</p>
+    <p>Senin - Sabtu, 08:00-17:00 WIB</p>
+  </footer>
+
+  <!-- Script untuk hamburger -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

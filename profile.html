@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Cici Mey</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🍰 CimeY</div>
+    <div class="menu" id="menu">
+      <a href="dashboard.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="profile.html">Profile</a>
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Profile</h1>
+    <p>Kenali lebih dekat pendiri toko bahan kue CimeY</p>
+  </header>
+
+  <!-- Konten Profile -->
+  <section class="profile">
+    <div class="profile-card">
+      <img src="WhatsApp Image 2025-09-30 at 14.24.50_35387002.jpg" alt="Owner">
+      <h2>Febiola Meylani</h2>
+      <p>Pendiri & Owner Toko Bahan Kue</p>
+      <p>
+        Seorang pecinta baking sejak kecil, Febiola memulai usahanya dari
+        hobi membuat kue untuk keluarga. Kini, toko bahan kue yang ia dirikan
+        melayani ribuan pelanggan dari berbagai kalangan.
+      </p>
+      <button class="btn">Hubungi Saya</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>CimeY</strong> | Passion for Baking</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

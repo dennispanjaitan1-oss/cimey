@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami - CimeY</title>
+  <link rel="stylesheet" href="tentang.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🍰 CimeY</div>
+    <div class="menu" id="menu">
+      <a href="dashboard.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="profile.html">Profile</a>
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Tentang Kami</h1>
+    <p>Kenal lebih dekat dengan toko bahan kue terbaik pilihan Anda</p>
+  </header>
+
+  <!-- Konten Tentang -->
+  <section class="about">
+    <div class="about-content">
+      <img src="logo.avif" alt="Toko Bahan Kue">
+      <div>
+        <h2>Sejak 2010</h2>
+        <p>
+          Toko Bahan Kue <strong>CimeY</strong> sudah berdiri sejak 2010 dengan visi
+          menghadirkan bahan kue terbaik untuk semua kalangan. Kami percaya
+          bahwa <em>membuat kue adalah seni</em>, dan setiap orang bisa menjadi baker
+          hebat dengan bahan yang tepat.
+        </p>
+        <p>
+          Kini, kami melayani ribuan pelanggan mulai dari ibu rumah tangga, pelajar,
+          hingga pengusaha kue profesional, dan sudah memiliki 2 cabang di Medan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>CimeY - Toko Bahan Kue</strong> | Sejak 2010</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

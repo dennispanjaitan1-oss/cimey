@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Web</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+
+        <form action="submit">
+
+            <h1>Hi Baker!</h1>
+
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+               <i class='bxr  bxs-user bx-flip-vertical'  style='color:#060505'></i>   
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bxr  bxs-lock bx-flip-vertical'  style='color:#060505'></i> 
+            </div>
+
+            <div class="remember-forgot">
+
+                <div class="remember">
+                    <input type="checkbox">
+                    <label for="">Ingatkan Saya</label>
+                </div>
+
+                <a href="#">Lupa Sandi?</a>
+            </div>
+
+            <button type="submit" class="btn" onclick="location.href='dashboard.html'; return false;">Login</button>
+
+
+            <div class="register-link">
+                <p>Login Sebagai Admin?
+                    <a href="admin.html">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

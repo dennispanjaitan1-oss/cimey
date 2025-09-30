@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Toko Bahan Kue</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🛠 Admin Panel</div>
+    <div class="menu" id="menu">
+      <a href="index.html">🏠 Beranda</a>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="#">⚙️ Pengaturan</a>
+    </div>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="logo-big">📋</div>
+    <h2>Manajemen Data</h2>
+    <p>Kelola data client dan produk toko bahan kue</p>
+  </section>
+
+  <!-- Tabel Data Client -->
+  <section class="table-section">
+    <h3>Data Member Client</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Andi</td>
+            <td>andi@example.com</td>
+            <td>User</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>Budi</td>
+            <td>budi@example.com</td>
+            <td>User</td>
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Cici</td>
+            <td>cici@example.com</td>
+            <td>Admin</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Tabel Data Produk -->
+  <section class="table-section">
+    <h3>Data Produk</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama Produk</th>
+            <th>Stok</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P001</td>
+            <td>Tepung Terigu Premium</td>
+            <td>120</td>
+            <td>Rp18.000</td>
+          </tr>
+          <tr>
+            <td>P002</td>
+            <td>Gula Halus</td>
+            <td>80</td>
+            <td>Rp12.000</td>
+          </tr>
+          <tr>
+            <td>P003</td>
+            <td>Mentega Unsalted</td>
+            <td>45</td>
+            <td>Rp22.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Admin Panel - Cici Mey</strong></p>
+    <p>Jl. Melati No. 12, Bandung | Tel: 0812-3456-7890</p>
+  </footer>
+
+  <!-- Script hamburger -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

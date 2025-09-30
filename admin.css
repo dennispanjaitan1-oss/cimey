@@ -1,0 +1,154 @@
+:root {
+  --navy: #0B2340;
+  --purple: #6A3EBF;
+  --cream: #FFF8F0;
+}
+
+/* Background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: white;
+  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80") no-repeat center center fixed;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(11, 35, 64, 0.6);
+  z-index: -1;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+nav .menu {
+  display: flex;
+  gap: 20px;
+}
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+nav .menu a:hover {
+  background: linear-gradient(90deg, var(--navy), var(--purple));
+  color: var(--cream);
+}
+nav .menu a:active,
+nav .menu a.active {
+  color: var(--purple);
+  background: rgba(255,255,255,0.2);
+  font-weight: 700;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.hero .logo-big {
+  font-size: 60px;
+}
+.hero h2 {
+  margin: 10px 0;
+}
+
+/* Tabel */
+.table-section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.table-section h3 {
+  margin-bottom: 10px;
+}
+.table-wrap {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 15px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+table th, table td {
+  padding: 12px;
+  text-align: left;
+}
+table th {
+  background: rgba(11,35,64,0.8);
+}
+table tr:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+table tr:hover {
+  background: rgba(106,62,191,0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
+}
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(11,35,64,0.95);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+
+    /* animasi slide */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+  nav .menu.show {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .hamburger {
+    display: block;
+  }
+}
